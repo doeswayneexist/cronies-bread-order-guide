@@ -6,7 +6,7 @@ var extraPeople;
 var sandwichRatio = 3;
 
 //set the backup supply. this is what portion of the daily usage we should add as backup. set at an extra 75%
-//var backUp = .75;
+//backUp is set to what we want to have in the freezer in case of emergency
 var backUp = 48;
 //connect with the submit button
 var subBtn = document.getElementById("sub");
