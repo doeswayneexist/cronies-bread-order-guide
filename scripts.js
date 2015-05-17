@@ -9,8 +9,7 @@ var sandwichRatio = 3;
 //backUp is set to what we want to have in the freezer in case of emergency
 var backUp = 48;
 //connect with the submit button
-var subBtn = document.getElementById("sub");
-subBtn.onclick = function () {
+document.getElementById("sub").onclick = function () {
     extraPeople = document.getElementById("extraPeople").value;
     currentBread = document.getElementById('rolls').value;
     calculateBread(currentBread);
@@ -39,7 +38,7 @@ function calculateBread(cB) {
 
     if (weekday == 0) {
         estimatedUsage = sundayAverage;
-        breadPar = mondayAverage + (mondayAverage * backUp);
+        breadPar = mondayAverage + backUp;
     } else if (weekday == 1) {
         estimatedUsage = mondayAverage;
     } else if (weekday == 2) {
