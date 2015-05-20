@@ -44,9 +44,10 @@ function calculateBread(cB) {
         breadPar = tuesdayAverage + backUp;
     } else if (weekday == 2) {
         estimatedUsage = tuesdayAverage;
+        breadPar = wednesdayAverage + backUp;
     } else if (weekday == 3) {
         estimatedUsage = wednesdayAverage;
-        breadPar = thursdayAverage + (thursdayAverage * backUp);
+        breadPar = thursdayAverage + backUp;
     } else if (weekday == 4) {
         estimatedUsage = thursdayAverage;
         //breadPar = fridayAverage + (fridayAverage * backUp);
